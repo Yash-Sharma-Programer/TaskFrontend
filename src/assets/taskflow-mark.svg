@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">TaskFlow</title>
+  <rect width="64" height="64" rx="18" fill="#261232"/>
+  <path d="M17 18h30v10H37v24H27V28H17z" fill="#FF745F"/>
+</svg>

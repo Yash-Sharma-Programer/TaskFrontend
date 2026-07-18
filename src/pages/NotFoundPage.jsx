@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom'; import { Button } from '../components/ui';
+export default function NotFoundPage(){return <div className="grid min-h-screen place-items-center bg-canvas p-4 text-center"><div><p className="text-8xl font-black text-coral">404</p><h1 className="mt-4 text-3xl font-black">Page not found</h1><p className="mt-2 text-muted">The page may have moved or no longer exists.</p><Link to="/dashboard"><Button className="mt-6">Back to dashboard</Button></Link></div></div>}
