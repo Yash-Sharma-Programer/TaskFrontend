@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import { invitationsApi, organisationsApi } from '../api';
-import { useAppStore } from '../store/useAppStore';
-import { Button } from '../components/ui';
+import { useAppStore } from '../store/useAppStore.js';
+import { Button } from '../components/ui.jsx';
 import { Bell, FolderKanban } from 'lucide-react';
 
 export default function OnboardingPage() {

@@ -4,8 +4,8 @@ import { ArrowLeft, Download, FileText, MessageCircle, MoreVertical, Paperclip, 
 import { format } from 'date-fns';
 import toast from 'react-hot-toast';
 import { chatApi } from '../api';
-import { useAppStore } from '../store/useAppStore';
-import { Avatar, EmptyState, ErrorState, Skeleton } from '../components/ui';
+import { useAppStore } from '../store/useAppStore.js';
+import { Avatar, EmptyState, ErrorState, Skeleton } from '../components/ui.jsx';
 
 const emojis = ['😀', '😂', '😊', '👍', '🎉', '❤️', '🔥', '✅', '🙏', '🚀'];
 const fileSize = (size = 0) => size >= 1048576 ? `${(size / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(size / 1024))} KB`;

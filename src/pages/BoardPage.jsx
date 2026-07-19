@@ -52,7 +52,7 @@ import {
   Modal,
   PageHeader,
   Skeleton,
-} from "../components/ui";
+} from "../components/ui.jsx";
 
 const priorityTone = {
   low: "bg-slate-100 text-slate-600",

@@ -5,7 +5,7 @@ import { MailPlus, MoreHorizontal, Search, Trash2 } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 import toast from "react-hot-toast";
 import { organisationsApi, usersApi } from "../api";
-import { useAppStore } from "../store/useAppStore";
+import { useAppStore } from "../store/useAppStore.js";
 import {
   Avatar,
   Badge,

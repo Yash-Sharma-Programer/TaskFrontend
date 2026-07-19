@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import { useQueryClient } from '@tanstack/react-query';
-import { useAppStore } from '../store/useAppStore';
+import { useAppStore } from '../store/useAppStore.js';
 
 export const useSocket = (projectId) => {
   const ref = useRef(); const queryClient = useQueryClient(); const { user, organisation, workspace } = useAppStore();

@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { authApi, organisationsApi } from '../api';
-import { setAccessToken } from '../api/client';
-import { useAppStore } from '../store/useAppStore';
+import { setAccessToken } from '../api/client.js';
+import { useAppStore } from '../store/useAppStore.js';
 
 const AuthContext = createContext(null);
 

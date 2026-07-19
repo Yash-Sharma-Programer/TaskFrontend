@@ -3,8 +3,8 @@ import { AlertTriangle, CheckCircle2, Clock3, FolderKanban, ListTodo, Users } fr
 import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { format, formatDistanceToNow } from 'date-fns';
 import { analyticsApi } from '../api';
-import { useAppStore } from '../store/useAppStore';
-import { Avatar, Card, ErrorState, PageHeader, Progress, Skeleton } from '../components/ui';
+import { useAppStore } from '../store/useAppStore.js';
+import { Avatar, Card, ErrorState, PageHeader, Progress, Skeleton } from '../components/ui.jsx';
 
 const colors = ['#FF745F','#3FB27F','#F5A742','#75667D','#E95858'];
 const Stat = ({label,value,icon:Icon,tone}) => <Card className="p-5"><div className="flex items-center justify-between"><span className={`rounded-2xl p-3 ${tone}`}><Icon size={20}/></span><span className="text-3xl font-black">{value ?? 0}</span></div><p className="mt-4 text-sm font-semibold text-muted">{label}</p></Card>;

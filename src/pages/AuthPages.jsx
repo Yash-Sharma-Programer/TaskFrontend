@@ -5,9 +5,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { ArrowRight, CheckCircle2, Eye, EyeOff, FolderKanban } from 'lucide-react';
 import toast from 'react-hot-toast';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext.jsx';
 import { authApi } from '../api';
-import { Button, FieldError } from '../components/ui';
+import { Button, FieldError } from '../components/ui.jsx';
 
 const loginSchema = z.object({ email: z.string().email('Enter a valid email'), password: z.string().min(1, 'Password is required') });
 const registerSchema = z.object({ fullName: z.string().min(2, 'Enter your full name'), username: z.string().regex(/^[a-z0-9._-]{3,30}$/i, 'Use 3–30 letters, numbers, dots or underscores'), email: z.string().email(), password: z.string().min(8).regex(/[A-Z]/, 'Add an uppercase letter').regex(/[a-z]/, 'Add a lowercase letter').regex(/[0-9]/, 'Add a number') });
